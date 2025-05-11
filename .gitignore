@@ -1,6 +1,12 @@
 build/
 excel/
+
 export.lnk
 data.lnk
+data
+export
 
 app/CMakeLists.txt.user
+
+.DS_Store
+Mac/.DS_Store

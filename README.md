@@ -51,7 +51,23 @@ app/
 
 ### macOS
 
-*(Redactar detalles de instalación en macOS más adelante)*
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/Tyrian0/Fichaje.git
+   cd Fichaje
+   ```
+2. Da permisos al script:
+
+   ```bash
+   chmod +x build.sh  # dar permisos
+   ```
+3. Usa el script según la acción deseada:
+
+   * `./build.sh` : Configura, compila e instala (en `install/`).
+   * `./build.sh build` : Sólo compila (tras haber configurado antes).
+   * `./build.sh clean` : Elimina `build/` e `install/`.
+   * `./build.sh rebuild` : Limpia todo, vuelve a configurar y compila.
 
 ## Uso
 
@@ -77,7 +93,15 @@ Para sincronizar el historial de fichajes entre varios equipos, se recomienda us
 
 ### macOS
 
-*(Redactar instrucciones de sincronización en macOS más adelante)*
+1. Asegúrate de tener Google Drive instalado y sincronizado.
+2. Crea la carpeta compartida `Fichaje` en Google Drive (p. ej. `~/Google Drive/Mi unidad/Fichaje`).
+3. Crea un enlace simbólico en tu directorio de soporte de la aplicación:
+
+   ```bash
+   ln -s ~/Google\ Drive/Mi\ unidad/Fichaje ~/Library/Application\ Support/Fichaje
+   ```
+
+La aplicación leerá y guardará los datos en la carpeta sincronizada.\*
 
 ## Licencia
 
