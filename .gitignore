@@ -2,3 +2,5 @@ build/
 excel/
 export.lnk
 data.lnk
+
+app/CMakeLists.txt.user
